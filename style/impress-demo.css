@@ -216,7 +216,7 @@ a:focus {
     display: block;
 
     width: 900px;
-    height: 700px;
+    height: 560px;
     padding: 40px 60px;
 
     background-color: white;
@@ -228,8 +228,8 @@ a:focus {
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 30px;
     letter-spacing: -1px;
 }
 
@@ -260,12 +260,12 @@ a:focus {
     padding: 0;
 }
 
-#title .try {
-    font-size: 64px;
+#title .tlitts {
+    font-size: 52px;
+    top: 1.8em;
+    left: 1.2em;
     position: absolute;
-    top: -0.5em;
-    left: 1.5em;
-
+	
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
     -ms-transform:     translateZ(20px);
@@ -273,18 +273,72 @@ a:focus {
     transform:         translateZ(20px);
 }
 
-#title h1 {
-    font-size: 180px;
-
-    -webkit-transform: translateZ(50px);
-    -moz-transform:    translateZ(50px);
-    -ms-transform:     translateZ(50px);
-    -o-transform:      translateZ(50px);
-    transform:         translateZ(50px);
-}
+#title p {
+    font-size: 340px;
+	text-align:center;}
 
 #title .footnote {
     font-size: 32px;
+}
+
+/*
+    ... so we define display to `inline-block` to enable transforms and
+    transition duration to 0.5s ...
+*/
+#title b {
+    display: inline-block;
+    -webkit-transition: 1.0s;
+    -moz-transition:    1.0s;
+    -ms-transition:     1.0s;
+    -o-transition:      1.0s;
+    transition:         1.0s;
+}
+/*
+    ... 'rotating' to rotate a quarter of a second later ...
+*/
+#title.present .rotating {
+	color:#d60524;
+	
+    -webkit-transform: rotate(-7deg);
+    -moz-transform:    rotate(-7deg);
+    -ms-transform:     rotate(-7deg);
+    -o-transform:      rotate(-7deg);
+    transform:         rotate(-7deg);
+
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay:    0.5s;
+    -ms-transition-delay:     0.5s;
+    -o-transition-delay:      0.5s;
+    transition-delay:         0.5s;
+}
+
+
+/*
+    This step is nothing special, just a text centered.
+*/
+#time,#revenue, #cases{
+    font-size: 100px;
+	text-align:center;
+	padding: 0;
+	}
+	
+#timeH2020, #time2020vs2019, #revenueDetails, #revenue2020vs2019, #casesRot p {
+    font-size: 30px;
+	text-align:center;
+	padding: 0;
+	}	
+
+#moneyRot .rotating {
+	font-size: 15px;
+	-webkit-transform: rotate(90deg);
+    -moz-transform:    rotate(90deg);
+    -ms-transform:     rotate(90deg);
+    -o-transform:      rotate(90deg);
+    transform:         rotate(90deg);
+	
+	width:300px;
+	height: 100px;
+	display: content;
 }
 
 /*
@@ -294,7 +348,6 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
-    width: 600px;
     text-align: center;
     font-size: 60px;
     line-height: 1;
