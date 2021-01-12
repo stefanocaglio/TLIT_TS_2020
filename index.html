@@ -4,28 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>TLIT TS | 2020 results | by Stefano Caglio</title>
+    <title>TLIT TS 2020 | S. Caglio</title>
     
-    <meta name="description" content="TLIT TS 2020 results using impress.js and observable." />
+    <meta name="description" content="TLIT TS 2020 results using impress.js and Observable." />
     <meta name="author" content="Stefano Caglio" />
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <!--
-        
-        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
-        presentation to work.
-        
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
-        
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
-        
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
-        
-    -->
     <link href="./style/impress-demo.css" rel="stylesheet" />
     <link href="./style/impress-common.css" rel="stylesheet" />
     
@@ -34,7 +19,6 @@
 </head>
 
 <!--
-    
     Body element is used by impress.js to set some useful class names, that will allow you to detect
     the support and state of the presentation in CSS or other scripts.
     
@@ -48,8 +32,7 @@
     be removed.
     
     The class name on body element also depends on currently active presentation step. More details about
-    it can be found later, when `hint` element is being described.
-    
+    it can be found later, when `hint` element is being described.   
 -->
 <body class="impress-not-supported">
 
@@ -61,8 +44,7 @@
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
-<!--
-    
+<!--  
     Now that's the core element used by impress.js.
     
     That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
@@ -144,39 +126,29 @@
     <div id="covid" class="step slide" data-x="0" data-y="-1500" data-z="1000">
         <q> 🦠 <b>COVID</b> 😷 has made us evolve like never before as professionals as well as human beings.</q>
     </div>
+	
 
     <div id="success" class="step slide" data-x="1000" data-y="-1500" data-z="1000">
         <q> ...but <span style="font-size: 24px;">small 🎯</span> and <span style="font-size: 75px;">big 🎯</span> successes deserve to be properly celebrated. 🥳
 			<br><br>
 		<span style="float:right;">	This is our 2020...</span></q>
     </div>
+	
 
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to its correct size.
-        
-    -->
     <div id="title" class="step" data-x="0" data-y="0" data-z="1000" data-scale="4">
         <span class="tlitts">TLIT <b class="rotating">Tech Services</b></span>
         <p>2020</p>
     </div>
 
-    <!--
-        
-        This element introduces rotation.
-        
+    <!--    
+        This element introduces rotation.   
         Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
+        element should be rotated by 90 degrees clockwise.  
     -->
     <div id="time" class="step" data-x="1800" data-y="1800" data-z="0" data-rotate="90" data-scale="2">
         <p> <strong> { ⏱️ time️ } </strong> </p>
     </div>
+	
 	
 	<div id="timeH2020" class="step" data-x="1800" data-y="3500" data-z="-800" data-rotate="90" data-rotate-x="-40" data-scale="2">
 <!--		<div class="days510"></div>
@@ -190,8 +162,9 @@
 		});
 		</script> -->
 		<iframe width="100%" height="535" frameborder="0"
-  src="https://observablehq.com/embed/30cd02edef0c302e?cell=days510&cell=chart"></iframe>
+			src="https://observablehq.com/embed/30cd02edef0c302e?cell=days510&cell=chart"></iframe>
     </div>
+
 
 	<div id="time2020vs2019" class="step" data-x="1800" data-y="4800" data-z="-2400" data-rotate="90" data-rotate-x="-80" data-scale="2">         
 		<div class="year2020"></div> <br>
@@ -214,8 +187,9 @@
 	
 	
 	<div id="revenue" class="step" data-x="0" data-y="1800" data-z="0" data-rotate="90" data-scale="2">
-        <p> <strong> { 💲 money } </strong> </p>
+        <p> <strong> { 💲 revenue } </strong> </p>
     </div>
+	
 	
 	<div id="revenueDetails" class="step" data-x="0" data-y="3500" data-z="-800" data-rotate="90" data-rotate-x="-40" data-scale="2">
          
@@ -231,7 +205,7 @@
     </div>
 	
 	
-	<div id="revenue2020vs2019" class="step" data-x="0" data-y="4800" data-z="-2400" data-rotate="90" data-rotate-x="-80" data-scale="2">
+	<div id="revenue2020vs2019" class="step" data-x="0" data-y="4800" data-z="-2600" data-rotate="90" data-rotate-x="-80" data-scale="2">
          
         <div class="radar"></div>
 		<div class="TitleRadar" style="font-size: 30px;"></div>
@@ -244,31 +218,40 @@
 		});
 		</script>
 	</div>
-	
+
+	<div id="monthlyRevenue2020" class="step" data-x="0" data-y="4800" data-z="-4600" data-rotate="90" data-rotate-x="-80" data-scale="2">
+         
+<iframe width="100%" height="494" frameborder="0"
+  src="https://observablehq.com/embed/30cd02edef0c302e?cell=monthlyRevenueTextTitle&cell=monthlyRevenue&cell=monthlyRevenueText"></iframe>
+	</div>	
+
 
 	<div id="cases" class="step" data-x="-1800" data-y="1800" data-z="0" data-rotate="90" data-scale="2">
         <p> <strong> { 💼 cases } </strong> </p>
     </div>
 	
+	
 	<div id="casesRot" class="step" data-x="-1800" data-y="3500" data-z="-800" data-rotate="90" data-rotate-x="-40" data-scale="2">
-		<p> <strong> { 💼 cases } </strong> </p>
+<iframe width="100%" height="652" frameborder="0"
+  src="https://observablehq.com/embed/30cd02edef0c302e?cell=chartCases20192020Title&cell=chartCases20192020"></iframe>
     </div>
 
+	<div id="casesTotal" class="step" data-x="-1800" data-y="4800" data-z="-2600" data-rotate="90" data-rotate-x="-80" data-scale="2">       
+        <iframe width="100%" height="383" frameborder="0"
+		src="https://observablehq.com/embed/30cd02edef0c302e?cell=totalCasesTitle&cell=totalCasesTable"></iframe>
+	</div>
+
+	<div id="serviceAppointments" class="step" data-x="-1800" data-y="4800" data-z="-4600" data-rotate="90" data-rotate-x="-80" data-scale="2">      
+		<iframe width="100%" height="736" frameborder="0"
+		  src="https://observablehq.com/embed/30cd02edef0c302e?cell=SATitle&cell=SAsvg"></iframe>
+	</div>	
+
+
     <!--
-        
-        So to summarize of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` - defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
+         These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform    
     -->
+	
     <div id="overview" class="step" data-x="0" data-y="1200" data-z="0" data-rotate="90" data-scale="7">
     </div>
 
@@ -282,7 +265,6 @@
 <div id="impress-toolbar"></div>
 
 <!--
-    
     Hint is not related to impress.js in any way.
     
     But it can show you how to use impress.js features in creative way.
@@ -303,7 +285,6 @@
     probably just hidden somewhere in HTML - not hard-coded in the script.
     
     Just sayin' ;)
-    
 -->
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate. <br/>
@@ -315,8 +296,7 @@ if ("ontouchstart" in document.documentElement) {
 }
 </script>
 
-<!--
-    
+<!--  
     Last, but not least.
     
     To make all described above really work, you need to include impress.js in the page.
@@ -328,13 +308,11 @@ if ("ontouchstart" in document.documentElement) {
     And you should do it in the end of your document. Not only because it's a good practice, but also
     because it should be done when the whole document is ready.
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
 -->
 <script src="./style/impress.js"></script>
 <script>impress().init();</script>
 
-<!--
-    
+<!--  
     The `impress()` function also gives you access to the API that controls the presentation.
     
     Just store the result of the call:
@@ -355,7 +333,6 @@ if ("ontouchstart" in document.documentElement) {
     
     For some example uses of this API check the last part of the source of impress.js where the API
     is used in event handlers.
-    
 -->
 
 </body>

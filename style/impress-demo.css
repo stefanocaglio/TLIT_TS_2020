@@ -322,11 +322,11 @@ a:focus {
 	padding: 0;
 	}
 	
-#timeH2020, #time2020vs2019, #revenueDetails, #revenue2020vs2019, #casesRot p {
+#timeH2020, #time2020vs2019, #revenueDetails, #revenue2020vs2019, #casesRot, #casesTotal p {
     font-size: 30px;
 	text-align:center;
 	padding: 0;
-	}	
+	}		
 
 #moneyRot .rotating {
 	font-size: 15px;
