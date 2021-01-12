@@ -275,7 +275,9 @@ a:focus {
 
 #title p {
     font-size: 280px;
-	text-align:center;}
+    text-align:center;
+    padding-top: 30px;
+}
 
 #title .footnote {
     font-size: 32px;
